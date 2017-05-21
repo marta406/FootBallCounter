@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">FootBall Counter</string>
+    <string name="a">Team A</string>
+    <string name="b">Team B</string>
+    <string name="r1">Reset team A</string>
+    <string name="r2">Reset team B</string>
+    <string name="r3">Reset All</string>
+
+    <string name="g1">Goals:&#160;</string>
+    <string name="g2">Goal!</string>
+    <string name="yc">Yellow Cards:&#160;</string>
+    <string name="rc">Red Cards:&#160;</string>
+    <string name="z">0</string>
+
+</resources>
+

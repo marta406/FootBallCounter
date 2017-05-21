@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.footballcounter.MainActivity">
+
+    <ImageView
+        android:id="@+id/photo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/texture" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <!-- half of team A -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="30"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/teamA"
+                style="@style/team"
+                android:layout_gravity="top|center"
+                android:text="@string/a" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/goalTeamA"
+                        style="@style/goals"
+                        android:text="@string/g1" />
+
+                    <TextView
+                        android:id="@+id/goalTeamAScore"
+                        style="@style/goal0"
+                        android:layout_toEndOf="@id/goalTeamA"
+                        android:text="@string/z" />
+
+                    <TextView
+                        android:id="@+id/yellowTeamA"
+                        style="@style/yrCardsStyle1"
+                        android:layout_below="@id/goalTeamA"
+                        android:text="@string/yc" />
+
+                    <TextView
+                        android:id="@+id/yellowTeamAScore"
+                        style="@style/yrCardsStyle2"
+                        android:layout_below="@id/goalTeamA"
+                        android:layout_toEndOf="@id/yellowTeamA"
+                        android:text="@string/z" />
+
+                    <TextView
+                        android:id="@+id/redTeamA"
+                        style="@style/yrCardsStyle1"
+                        android:layout_below="@id/yellowTeamA"
+                        android:text="@string/rc" />
+
+                    <TextView
+                        android:id="@+id/redTeamAScore"
+                        style="@style/yrCardsStyle2"
+                        android:layout_below="@id/yellowTeamA"
+                        android:layout_toEndOf="@id/redTeamA"
+                        android:text="@string/z" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="5">
+
+                    <Button
+                        android:id="@+id/buttonGoalA"
+                        style="@style/buttonGoal"
+                        android:onClick="increaseGoalsOfTeamA"
+                        android:text="@string/g2" />
+
+                    <ImageButton
+                        android:id="@+id/buttonRedA"
+                        style="@style/buttonRed"
+                        android:layout_below="@id/buttonGoalA"
+                        android:onClick="increaseRedCardsOfTeamA"
+                        android:src="@drawable/red" />
+
+                    <ImageButton
+                        android:id="@+id/buttonYellowA"
+                        style="@style/buttonYellow"
+                        android:layout_below="@id/buttonGoalA"
+                        android:layout_toStartOf="@id/buttonRedA"
+                        android:onClick="increaseYellowCardsOfTeamA"
+                        android:src="@drawable/yellow" />
+
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <!-- White line between Team A and Team B -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view"
+            android:background="@color/white" />
+
+
+        <!-- half of team B -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="30"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="100"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/goalTeamB"
+                            style="@style/goals"
+                            android:text="@string/g1" />
+
+                        <TextView
+                            android:id="@+id/goalTeamBScore"
+                            style="@style/goal0"
+                            android:layout_toEndOf="@id/goalTeamB"
+                            android:text="@string/z" />
+
+                        <TextView
+                            android:id="@+id/yellowTeamB"
+                            style="@style/yrCardsStyle1"
+                            android:layout_below="@id/goalTeamB"
+                            android:text="@string/yc" />
+
+                        <TextView
+                            android:id="@+id/yellowTeamBScore"
+                            style="@style/yrCardsStyle2"
+                            android:layout_below="@id/goalTeamB"
+                            android:layout_toEndOf="@id/yellowTeamB"
+                            android:text="@string/z" />
+
+                        <TextView
+                            android:id="@+id/redTeamB"
+                            style="@style/yrCardsStyle1"
+                            android:layout_below="@id/yellowTeamB"
+                            android:text="@string/rc" />
+
+                        <TextView
+                            android:id="@+id/redTeamBScore"
+                            style="@style/yrCardsStyle2"
+                            android:layout_below="@id/yellowTeamB"
+                            android:layout_toEndOf="@id/redTeamB"
+                            android:text="@string/z" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="5">
+
+                        <Button
+                            android:id="@+id/buttonGoalB"
+                            style="@style/buttonGoal"
+                            android:onClick="increaseGoalsOfTeamB"
+                            android:text="@string/g2" />
+
+                        <ImageButton
+                            android:id="@+id/buttonRedB"
+                            style="@style/buttonRed"
+                            android:layout_below="@id/buttonGoalB"
+                            android:onClick="increaseRedCardsOfTeamB"
+                            android:src="@drawable/red" />
+
+                        <ImageButton
+                            android:id="@+id/buttonYellowB"
+                            style="@style/buttonYellow"
+                            android:layout_below="@id/buttonGoalB"
+                            android:layout_toStartOf="@id/buttonRedB"
+                            android:onClick="increaseYellowCardsOfTeamB"
+                            android:src="@drawable/yellow" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/teamB"
+                    style="@style/team"
+                    android:layout_gravity="bottom|center"
+                    android:layout_weight="1"
+                    android:text="@string/b" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Reseting buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                style="@style/buttonReset"
+                android:onClick="resetA"
+                android:text="@string/r1" />
+
+            <View style="@style/line" />
+
+            <Button
+                style="@style/buttonReset"
+                android:onClick="resetB"
+                android:text="@string/r2" />
+
+            <View style="@style/line" />
+
+            <Button
+                style="@style/buttonReset"
+                android:onClick="resetAll"
+                android:text="@string/r3" />
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

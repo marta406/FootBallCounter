@@ -1,0 +1,92 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Primary theme color of the app (sets background color of app bar) -->
+
+        <!-- Background color of buttons in the app -->
+        <item name="colorButtonNormal">#66ff66</item>
+    </style>
+
+    <style name="team">
+        <item name="android:paddingBottom">@dimen/paddingOne</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">@dimen/paddingTwo</item>
+        <item name="android:paddingRight">@dimen/paddingTwo</item>
+        <item name="android:paddingTop">@dimen/paddingOne</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/cardText</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="goals">
+        <item name="android:layout_marginLeft">@dimen/margin</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/goalText</item>
+    </style>
+
+    <style name="goal0">
+        <item name="android:textColor">@color/goalGreen</item>
+        <item name="android:textSize">@dimen/goalText</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="yrCardsStyle1">
+        <item name="android:layout_marginLeft">@dimen/margin</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/cardText</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="yrCardsStyle2">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/cardText</item>
+    </style>
+
+    <style name="buttonGoal">
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:layout_marginRight">@dimen/margin</item>
+        <item name="android:layout_marginTop">@dimen/margin</item>
+        <item name="android:padding">@dimen/paddingThree</item>
+        <item name="android:textSize">@dimen/goalButtonText</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_width">@dimen/goalButton</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="buttonRed">
+        <item name="android:layout_marginRight">@dimen/margin</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="buttonYellow">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="line">
+        <item name="android:layout_width">@dimen/view2</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/viewGray</item>
+    </style>
+
+    <style name="buttonReset">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">@dimen/reset</item>
+        <item name="android:background">@color/black</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+</resources>
